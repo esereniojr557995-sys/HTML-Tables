@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animals Information</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    .animal-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .animal-card img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .card-body {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.25rem;
+    }
+    .card-title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .card-subtitle {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .card-text {
+      flex-grow: 1;
+      margin-bottom: 1rem;
+    }
+    .btn-learn-more {
+      width: 80%;
+      margin: 0 auto;
+      color: white;
+      font-weight: 500;
+      border: none;
+      transition: all 0.3s;
+    }
+    .btn-learn-more:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+    /* Unique colors for each button */
+    .btn-lion    { background-color: blue; } /* firebrick red    */
+    .btn-elephant{ background-color: gray; } /* dark slate gray  */
+    .btn-eagle   { background-color: green; } /* dodger blue      */
+    .btn-dolphin { background-color: red; } /* steel blue       */
+    .btn-panda   { background-color: skyblue; } /* sea green        */
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+
+  <!-- First Row: 3 Cards -->
+  <div class="row g-4 mb-4">
+    <div class="col-12 col-md-4">
+      <div class="card animal-card h-100 shadow-sm">
+        <img src="https://a-z-animals.com/media/2023/08/shutterstock-735713020-huge-licensed-scaled-1024x821.jpg" class="card-img-top" alt="Lion">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Lion</h5>
+            <h6 class="card-subtitle text-muted">King of the Jungle</h6>
+            <p class="card-text">A powerful wild cat known for its strength and leadership.</p>
+          </div>
+          <a href="#" class="btn btn-learn-more btn-lion">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card animal-card h-100 shadow-sm">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/500px-African_Bush_Elephant.jpg" class="card-img-top" alt="Dolphin">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Elephant</h5>
+            <h6 class="card-subtitle text-muted">Largest Land Animal</h6>
+            <p class="card-text">Known for intelligence, memory, and strong family bonds.</p>
+          </div>
+          <a href="#" class="btn btn-learn-more btn-elephant">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card animal-card h-100 shadow-sm">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Eagle_Lahore_Zoo_June302005.jpg/1280px-Eagle_Lahore_Zoo_June302005.jpg" class="card-img-top" alt="Dolphin">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Eagle</h5>
+            <h6 class="card-subtitle text-muted">Bird of Prey</h6>
+            <p class="card-text">Famous for sharp vision and soaring flight.</p>
+          </div>
+          <a href="#" class="btn btn-learn-more btn-eagle">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row: 2 Cards -->
+  <div class="row g-4" style="margin: 0px 100px;">
+    <div class="col-12 col-md-6">
+      <div class="card animal-card h-100 shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0uGjXl4cyzqfnqlMY_Tr7GeyaCMiMOVbXSA&s" class="card-img-top" alt="Dolphin">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Dolphin</h5>
+            <h6 class="card-subtitle text-muted">Intelligent Marine Mammal</h6>
+            <p class="card-text">Friendly, smart, and highly social sea animal.</p>
+          </div>
+          <a href="#" class="btn btn-learn-more btn-dolphin">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card animal-card h-100 shadow-sm">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/500px-Grosser_Panda.JPG" class="card-img-top" alt="Dolphin">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Panda</h5>
+            <h6 class="card-subtitle text-muted">Bamboo Eater</h6>
+            <p class="card-text">A gentle bear known for its love of bamboo and calm nature.</p>
+          </div>
+          <a href="#" class="btn btn-learn-more btn-panda">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
